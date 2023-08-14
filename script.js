@@ -5,12 +5,13 @@ var body = document.getElementById("gradient");
 
 function setGradient(){
     body.style.background = 
-        "linear-gradient(to right, " 
-        + color1.value 
-        + ", "
-        + color2.value 
-        + ")";
-      
+    "linear-gradient(to right, " 
+    + color1.value 
+    + ", "
+    + color2.value 
+    + ")";
+
+    css.textContent = body.style.background + ";";
 }
 
 color1.addEventListener("input", setGradient)
